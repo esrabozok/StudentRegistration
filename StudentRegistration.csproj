@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Transcript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StudentsOfCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CourseApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="SemesterCourse - Copy.Designer.cs">
+      <DependentUpon>SemesterCourse.Designer.cs</DependentUpon>
+    </Compile>
+    <Compile Update="SemesterCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Semester - Copy.Designer.cs">
+      <DependentUpon>Semester.Designer.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="StudentsOfCourse.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CourseApproval.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Course - Copy - Copy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Course - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Course - Copy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Course.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Semester - Copy.resx">
+      <DependentUpon>Semester.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SemesterCourse - Copy.resx">
+      <DependentUpon>SemesterCourse.resx</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
